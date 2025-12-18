@@ -1,65 +1,171 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Sparkles,
+  Languages,
+  Brain,
+  Mic,
+  Search,
+  CheckCircle,
+} from "lucide-react";
+import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
+
+export default function LandingPage() {
+  const router = useRouter();
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="min-h-screen bg-linear-to-b from-slate-950 to-slate-900 text-white">
+      {/* HERO */}
+      <section className="container mx-auto px-6 py-24 text-center">
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl md:text-6xl font-extrabold leading-tight"
+        >
+          Éditeur de Texte Intelligent <br />
+          <span className="text-indigo-400">pour la Langue Malagasy</span>
+        </motion.h1>
+
+        <p className="mt-6 text-lg text-slate-300 max-w-3xl mx-auto">
+          Un outil innovant qui assiste les rédacteurs malgaches grâce à
+          l’Intelligence Artificielle, même dans un contexte de langue à faibles
+          ressources.
+        </p>
+
+        <div className="mt-10 flex justify-center gap-4">
+          <Button
+            onClick={() => router.push("/demo")}
+            size="lg"
+            className="rounded-2xl"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            Essayer la Démo
+          </Button>
+          {/* <Button
+            size="lg"
+            variant="outline"
+            className="text-black rounded-2xl"
           >
-            Documentation
-          </a>
+            Voir les Fonctionnalités
+          </Button> */}
         </div>
-      </main>
+      </section>
+
+      {/* VALEUR */}
+      <section className="container mx-auto px-6 py-20 grid md:grid-cols-3 gap-8">
+        {[
+          {
+            icon: <Languages className="w-8 h-8 text-indigo-400" />,
+            title: "Pensé pour le Malagasy",
+            desc: "Contrairement aux éditeurs classiques, notre outil respecte les règles linguistiques et culturelles du Malagasy.",
+          },
+          {
+            icon: <Brain className="w-8 h-8 text-indigo-400" />,
+            title: "IA Hybride",
+            desc: "Combinaison d’approches symboliques, algorithmiques et data-driven pour contourner le manque de données.",
+          },
+          {
+            icon: <Sparkles className="w-8 h-8 text-indigo-400" />,
+            title: "Productivité Augmentée",
+            desc: "Écrivez plus vite, avec moins d’erreurs, tout en enrichissant votre vocabulaire.",
+          },
+        ].map((item, i) => (
+          <Card
+            key={i}
+            className="bg-slate-800/60 border-slate-700 rounded-2xl"
+          >
+            <CardContent className="p-6 text-center">
+              <div className="mb-4 flex justify-center">{item.icon}</div>
+              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+              <p className="text-slate-300">{item.desc}</p>
+            </CardContent>
+          </Card>
+        ))}
+      </section>
+
+      {/* FONCTIONNALITÉS */}
+      <section className="bg-slate-900/60 py-24">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            Fonctionnalités Clés
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                icon: <CheckCircle />,
+                title: "Correcteur Orthographique",
+                desc: "Détection intelligente des fautes avec distance de Levenshtein et dictionnaires locaux.",
+              },
+              {
+                icon: <Search />,
+                title: "Explorateur Sémantique",
+                desc: "Suggestions de concepts liés grâce à un graphe de connaissances malgache.",
+              },
+              {
+                icon: <Brain />,
+                title: "Autocomplétion",
+                desc: "Prédiction du mot suivant via modèles N-grams entraînés sur des corpus locaux.",
+              },
+              {
+                icon: <Languages />,
+                title: "Traduction Mot-à-Mot",
+                desc: "Cliquez sur un mot pour voir sa signification ou sa traduction instantanément.",
+              },
+              {
+                icon: <Sparkles />,
+                title: "Analyse de Sentiment",
+                desc: "Identification simple des tonalités positives ou négatives du texte.",
+              },
+              {
+                icon: <Mic />,
+                title: "Synthèse Vocale",
+                desc: "Écoutez votre texte lu avec un accent adapté au contexte local.",
+              },
+            ].map((f, i) => (
+              <Card
+                key={i}
+                className="bg-slate-800/60 border-slate-700 rounded-2xl"
+              >
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-3 text-indigo-400">
+                    {f.icon}
+                    <h3 className="text-lg font-semibold text-white">
+                      {f.title}
+                    </h3>
+                  </div>
+                  <p className="text-slate-300">{f.desc}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="container mx-auto px-6 py-24 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          Créez l’outil que Madagascar attend
+        </h2>
+        <p className="text-slate-300 max-w-2xl mx-auto mb-10">
+          Ce projet académique démontre comment l’IA peut valoriser une langue à
+          faibles ressources et soutenir la production écrite en Malagasy.
+        </p>
+        <Button
+          onClick={() => router.push("/demo")}
+          size="lg"
+          className="rounded-2xl px-10"
+        >
+          Commencer Maintenant
+        </Button>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="border-t border-slate-800 py-6 text-center text-slate-400 text-sm">
+        Projet IA – Institut Supérieur Polytechnique de Madagascar
+      </footer>
     </div>
   );
 }
