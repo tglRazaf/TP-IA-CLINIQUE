@@ -302,5 +302,338 @@
     "Lemmatisation": "soa",
     "synonymes": ["tsara", "mendrika"],
     "sentiment": "positif"
+  },
+  "fady": {
+     "definitions": ["défendu", "interdit", "prohibé", "sacré", "tabou"],
+     "type": "nom",
+    "exemples": ["fady rano", "fady"],
+    "Lemmatisation": "fady",
+    "synonymes": ["fady"],
+    "sentiment": "neutre"
+   },
+  "fahamatorana": {
+    "definitions": ["maturité"],
+    "type": "nom",
+    "exemples": ["Mba matotra", "matotra"],
+    "Lemmatisation": "matotra",
+    "synonymes": ["matotra"],
+    "sentiment": "neutre"
+  },
+  "fahamboniana": {
+    "definitions": ["grandeur", "supériorité"],
+    "type": "nom",
+    "exemples": ["fahamboniana tsara", "ambony"],
+    "Lemmatisation": "ambony",
+    "synonymes": ["ambony"],
+    "sentiment": "neutre"
+  },
+  "fahamendrehana": {
+    "definitions": ["beauté", "convenance", "dignité", "éthique", "mérite"],
+    "type": "nom",
+    "exemples": ["fahamendrehana tsara", "endrika"],
+    "Lemmatisation": "endrika",
+    "synonymes": ["endrika"],
+    "sentiment": "neutre"
+  },
+  "fahamontorana": {
+    "definitions": ["fâcherie", "mécontentement"],
+    "type": "nom",
+    "exemples": ["montotra loatra", "romotra"],
+    "Lemmatisation": "montotra",
+    "synonymes": ["montotra"],
+    "sentiment": "negatif"
+  },
+   "faharetana": {
+    "definitions": ["patience", "persévérance", "résistance"],
+    "type": "nom",
+    "exemples": ["faharetana finoana", "faharetana"],
+    "Lemmatisation": "aritra",
+    "synonymes": ["aritra"],
+    "sentiment": "negatif"
+  },
+    "faharoa": {
+    "definitions": ["patience", "persévérance", "résistance"],
+    "type": "nom",
+    "exemples": ["faharetana finoana", "faharetana"],
+    "Lemmatisation": "aritra",
+    "synonymes": ["aritra"],
+    "sentiment": "negatif"
+  },
+   "fa": {
+    "definitions": [
+      "car",
+      "mais",
+      "parce"
+    ],
+    "type": "conjonction",
+    "exemples": [
+      "fa"
+    ],
+    "Lemmatisation": "fa",
+    "synonymes": [
+      "satria"
+    ],
+    "sentiment": "neutre"
+  },
+  "fahafahana": {
+    "definitions": [
+      "affranchissement",
+      "liberté"
+    ],
+    "type": "nom",
+    "exemples": [
+      "fahafahana",
+      "afaka"
+    ],
+    "Lemmatisation": "afaka",
+    "synonymes": [
+      "afaka"
+    ],
+    "sentiment": "positif"
+  },
+  "fahafatesana": {
+    "definitions": [
+      "mort"
+    ],
+    "type": "nom",
+    "exemples": [
+      "fahafatesana",
+      "faty"
+    ],
+    "Lemmatisation": "faty",
+    "synonymes": [
+      "faty"
+    ],
+    "sentiment": "negatif"
+  },
+  "fahaizana": {
+    "definitions": [
+      "capacité",
+      "compétence",
+      "savoir"
+    ],
+    "type": "nom",
+    "exemples": [
+      "fahaizana",
+      "hay"
+    ],
+    "Lemmatisation": "hay",
+    "synonymes": [
+      "talenta"
+    ],
+    "sentiment": "positif"
+  },
+  "fahalalana": {
+    "definitions": [
+      "connaissance"
+    ],
+    "type": "nom",
+    "exemples": [
+      "fahalalana",
+      "lala"
+    ],
+    "Lemmatisation": "lala",
+    "synonymes": [
+      "fahaizana"
+    ],
+    "sentiment": "neutre"
+  },
+  
+  "fahatarana": {
+    "definitions": [],
+    "type": "nom",
+    "exemples": ["fahatarana", "tara"],
+    "Lemmatisation": "tara",
+    "synonymes": [],
+    "sentiment": "neutre"
+  },
+
+  "fahatelo": {
+    "definitions": ["troisième", "ennemi", "adversaire"],
+    "type": "nom",
+    "exemples": ["fahatelo", "telo"],
+    "Lemmatisation": "telo",
+    "synonymes": [],
+    "sentiment": "neutre"
+  },
+
+  "fahaterahana": {
+    "definitions": ["naissance"],
+    "type": "nom",
+    "exemples": ["fahaterahana", "teraka"],
+    "Lemmatisation": "teraka",
+    "synonymes": [],
+    "sentiment": "positif"
+  },
+
+  "fahaterena": {
+    "definitions": ["angoisse", "détresse"],
+    "type": "nom",
+    "exemples": ["fahaterena", "tery"],
+    "Lemmatisation": "tery",
+    "synonymes": [],
+    "sentiment": "negatif"
+  },
+
+  "fahatezerana": {
+    "definitions": ["colère"],
+    "type": "nom",
+    "exemples": ["fahatezerana", "tezitra"],
+    "Lemmatisation": "tezitra",
+    "synonymes": [],
+    "sentiment": "negatif"
+  },
+
+  "fahatongavana": {
+    "definitions": ["arrivée"],
+    "type": "nom",
+    "exemples": ["fahatongavana", "tonga"],
+    "Lemmatisation": "tonga",
+    "synonymes": [],
+    "sentiment": "positif"
+  },
+
+  "fahatontosana": {
+    "definitions": ["accomplissement", "perfection"],
+    "type": "nom",
+    "exemples": ["fahatontosana", "tontosa"],
+    "Lemmatisation": "tontosa",
+    "synonymes": [],
+    "sentiment": "positif"
+  },
+
+  "fahatsarana": {
+    "definitions": ["bonté", "excellence"],
+    "type": "nom",
+    "exemples": ["fahatsarana", "tsara"],
+    "Lemmatisation": "tsara",
+    "synonymes": [],
+    "sentiment": "positif"
+  },
+
+  "fahatsontsana": {
+    "definitions": ["erreur", "faute"],
+    "type": "nom",
+    "exemples": ["fahatsontsana", "tsontsa"],
+    "Lemmatisation": "tsontsa",
+    "synonymes": [],
+    "sentiment": "negatif"
+  },
+
+  "fahavalo": {
+    "definitions": ["ennemi", "huitième"],
+    "type": "nom",
+    "exemples": ["fahavalo", "valo"],
+    "Lemmatisation": "valo",
+    "synonymes": [],
+    "sentiment": "negatif"
+  },
+
+  "fahavaratra": {
+    "definitions": ["été"],
+    "type": "nom",
+    "exemples": ["fahavaratra"],
+    "Lemmatisation": "varatra",
+    "synonymes": [],
+    "sentiment": "positif"
+  },
+
+  "fahavelomana": {
+    "definitions": ["vie", "durée de vie"],
+    "type": "nom",
+    "exemples": ["fahavelomana", "velona"],
+    "Lemmatisation": "velona",
+    "synonymes": [],
+    "sentiment": "positif"
+  },
+
+  "fahaverezana": {
+    "definitions": ["perte", "perdition"],
+    "type": "nom",
+    "exemples": ["fahaverezana", "very"],
+    "Lemmatisation": "very",
+    "synonymes": [],
+    "sentiment": "negatif"
+  },
+
+  "fahavizanana": {
+    "definitions": ["fatigue", "lassitude"],
+    "type": "nom",
+    "exemples": ["fahavizanana", "vizana"],
+    "Lemmatisation": "vizana",
+    "synonymes": [],
+    "sentiment": "negatif"
+  },
+
+  "fahazavana": {
+    "definitions": ["lumière", "clarté"],
+    "type": "nom",
+    "exemples": ["fahazavana", "zava"],
+    "Lemmatisation": "zava",
+    "synonymes": [],
+    "sentiment": "positif"
+  },
+
+  "fahazazana": {
+    "definitions": ["enfance"],
+    "type": "nom",
+    "exemples": ["fahazazana", "zaza"],
+    "Lemmatisation": "zaza",
+    "synonymes": [],
+    "sentiment": "positif"
+  },
+
+  "fahefana": {
+    "definitions": ["autorité", "puissance"],
+    "type": "nom",
+    "exemples": ["fahefana", "efa"],
+    "Lemmatisation": "efa",
+    "synonymes": [],
+    "sentiment": "neutre"
+  },
+
+  "fahombiazana": {
+    "definitions": ["succès", "réussite"],
+    "type": "nom",
+    "exemples": ["fahombiazana", "omby"],
+    "Lemmatisation": "omby",
+    "synonymes": [],
+    "sentiment": "positif"
+  },
+
+  "fahoriana": {
+    "definitions": ["souffrance", "malheur"],
+    "type": "nom",
+    "exemples": ["fahoriana", "ory"],
+    "Lemmatisation": "ory",
+    "synonymes": [],
+    "sentiment": "negatif"
+  },
+
+  "fahotana": {
+    "definitions": ["péché"],
+    "type": "nom",
+    "exemples": ["fahotana", "ota"],
+    "Lemmatisation": "ota",
+    "synonymes": [],
+    "sentiment": "negatif"
+  },
+
+  "faka": {
+    "definitions": ["cause", "racine"],
+    "type": "nom",
+    "exemples": ["faka"],
+    "Lemmatisation": "faka",
+    "synonymes": [],
+    "sentiment": "neutre"
+  },
+
+  "fako": {
+    "definitions": ["ordures", "rebut"],
+    "type": "nom",
+    "exemples": ["fako"],
+    "Lemmatisation": "fako",
+    "synonymes": [],
+    "sentiment": "negatif"
   }
 }
