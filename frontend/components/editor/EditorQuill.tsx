@@ -103,6 +103,14 @@ export default function EditorQuill() {
     setShow(false)
   }
 
+  const customSetValue = (value: string) => {
+    setValue(value)
+if(value == ''){
+      setSuggestions([])
+      return
+    }
+  }
+
   return (
     <div className="text-black rounded-2xl shadow-xl" onContextMenu={onRightClick}>
       <ReactQuill
