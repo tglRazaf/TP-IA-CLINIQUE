@@ -9,6 +9,7 @@ from pydantic import BaseModel
 from typing import List, Dict, Optional
 import json
 from nlp_malagasy import nlp
+from corrector import corrector
 
 # Importer vos classes NLP (à créer dans des fichiers séparés)
 # from nlp_pipeline import NLPMalagasy
@@ -137,21 +138,10 @@ async def corriger_texte(request: TexteRequest):
     Vérifie l'orthographe et suggère des corrections
     """
     try:
-        # erreurs = correcteur.corriger_texte(request.texte)
-        # Simulation
-        erreurs = [
-            {
-                "position": 0,
-                "mot_original": "vari",
-                "suggestions": ["vary", "voara"],
-                "confiance": "haute"
-            }
-        ]
         
         return {
             "success": True,
-            "erreurs": erreurs,
-            "nombre_erreurs": len(erreurs)
+            "data": corrector.verifier_mot(request.texte),
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

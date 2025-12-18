@@ -155,5 +155,3 @@ class CorrecteurMalagasy:
 
 
 corrector = CorrecteurMalagasy('dictionary.json')
-
-print(corrector.verifier_mot('alad'))
