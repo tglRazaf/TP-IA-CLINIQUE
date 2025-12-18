@@ -125,3 +125,5 @@ Ce projet sert de **preuve de concept** pour montrer comment l’IA peut souteni
 - **Wikipédia (versions malagasy et française)** – articles encyclopédiques pour enrichir le corpus généraliste.
 - **Corpus biblique en malagasy** – texte biblique nettoyé et utilisé comme corpus de référence (`cleaned_bible.txt`).
 - **Baiboly malagasy en ligne** – texte biblique en malagasy pour la constitution du corpus : [`https://nybaiboly.net/Bible/BibleMalagasyHtm-at01-Genese.htm`](https://nybaiboly.net/Bible/BibleMalagasyHtm-at01-Genese.htm)
+
+* [**LIEN VERS LA VIDÉO DE PRÉSENTATION** (YouTube)](https://youtu.be/KRyWqP9Tj6o)  
