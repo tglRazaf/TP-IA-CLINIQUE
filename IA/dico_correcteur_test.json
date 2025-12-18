@@ -1,0 +1,79 @@
+{
+  "vary": {
+    "definitions": [
+      "céréale cultivée à Madagascar",
+      "riz"
+    ],
+    "type": "nom",
+    "exemples": [
+      "Mihinana vary aho",
+      "Tanimbary"
+    ],
+    "Lemmatisation": "vary",
+    "synonymes": [
+      "vary"
+    ],
+    "sentiment": "neutre"
+  },
+  "sakafo": {
+    "definitions": [
+      "nourriture",
+      "repas"
+    ],
+    "type": "nom",
+    "exemples": [
+      "Sakafo masaka"
+    ],
+    "Lemmatisation": "sakafo",
+    "synonymes": [
+      "hanina"
+    ],
+    "sentiment": "neutre"
+  },
+  "tsara": {
+    "definitions": [
+      "bon",
+      "bien",
+      "beau"
+    ],
+    "type": "adjectif",
+    "exemples": [
+      "Tsara loatra io"
+    ],
+    "Lemmatisation": "tsara",
+    "synonymes": [
+      "soa",
+      "mendrika"
+    ],
+    "sentiment": "positif"
+  },
+  "mandeha": {
+    "definitions": [
+      "aller",
+      "partir"
+    ],
+    "type": "verbe",
+    "exemples": [
+      "Mandeha any Tana aho"
+    ],
+    "Lemmatisation": "deha",
+    "synonymes": [
+      "mizotra"
+    ],
+    "sentiment": "neutre"
+  },
+  "rano": {
+    "definitions": [
+      "eau"
+    ],
+    "type": "nom",
+    "exemples": [
+      "Misotro rano"
+    ],
+    "Lemmatisation": "rano",
+    "synonymes": [
+      "rano"
+    ],
+    "sentiment": "neutre"
+  }
+}

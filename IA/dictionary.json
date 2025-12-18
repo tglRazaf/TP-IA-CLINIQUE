@@ -1,0 +1,306 @@
+{
+  "vary": {
+    "definitions": ["céréale cultivée à Madagascar", "riz"],
+    "type": "nom",
+    "exemples": ["Mihinana vary aho", "Tanimbary"],
+    "Lemmatisation": "vary",
+    "synonymes": ["vary"],
+    "sentiment": "neutre"
+  },
+  "sakafo": {
+    "definitions": ["nourriture", "repas", "aliment"],
+    "type": "nom",
+    "exemples": ["Sakafo masaka", "Mihinana sakafo"],
+    "Lemmatisation": "sakafo",
+    "synonymes": ["hanina"],
+    "sentiment": "neutre"
+  },
+  "rano": {
+    "definitions": ["eau", "liquide"],
+    "type": "nom",
+    "exemples": ["Misotro rano", "Rano madio"],
+    "Lemmatisation": "rano",
+    "synonymes": ["rano"],
+    "sentiment": "neutre"
+  },
+  "trano": {
+    "definitions": ["maison", "habitation", "demeure"],
+    "type": "nom",
+    "exemples": ["Trano lehibe", "Mipetraka amin'ny trano"],
+    "Lemmatisation": "trano",
+    "synonymes": ["toeram-ponenana", "toerana"],
+    "sentiment": "neutre"
+  },
+  "olona": {
+    "definitions": ["personne", "gens", "être humain"],
+    "type": "nom",
+    "exemples": ["Olona maro", "Olona tsara"],
+    "Lemmatisation": "olona",
+    "synonymes": ["olombelona"],
+    "sentiment": "neutre"
+  },
+  "tsara": {
+    "definitions": ["bon", "bien", "beau", "de qualité"],
+    "type": "adjectif",
+    "exemples": ["Tsara loatra io", "Olona tsara"],
+    "Lemmatisation": "tsara",
+    "synonymes": ["soa", "mendrika"],
+    "sentiment": "positif"
+  },
+  "ratsy": {
+    "definitions": ["mauvais", "mal", "méchant"],
+    "type": "adjectif",
+    "exemples": ["Ratsy fanahy", "Toetr'andro ratsy"],
+    "Lemmatisation": "ratsy",
+    "synonymes": ["tsy tsara", "mahasosotra"],
+    "sentiment": "negatif"
+  },
+  "lehibe": {
+    "definitions": ["grand", "gros", "important"],
+    "type": "adjectif",
+    "exemples": ["Trano lehibe", "Olona lehibe"],
+    "Lemmatisation": "lehibe",
+    "synonymes": ["be", "goavana"],
+    "sentiment": "neutre"
+  },
+  "kely": {
+    "definitions": ["petit", "peu", "minuscule"],
+    "type": "adjectif",
+    "exemples": ["Trano kely", "Zavatra kely"],
+    "Lemmatisation": "kely",
+    "synonymes": ["madinika"],
+    "sentiment": "neutre"
+  },
+  "mandeha": {
+    "definitions": ["aller", "partir", "se déplacer", "marcher"],
+    "type": "verbe",
+    "exemples": ["Mandeha any Tana aho", "Mandeha daholo"],
+    "Lemmatisation": "deha",
+    "synonymes": ["mizotra", "mifindra"],
+    "sentiment": "neutre"
+  },
+  "mipetraka": {
+    "definitions": ["s'asseoir", "habiter", "résider"],
+    "type": "verbe",
+    "exemples": ["Mipetraka eto aho", "Mipetraka amin'ny seza"],
+    "Lemmatisation": "petraka",
+    "synonymes": ["mitoetra", "monina"],
+    "sentiment": "neutre"
+  },
+  "mihinana": {
+    "definitions": ["manger", "consommer de la nourriture"],
+    "type": "verbe",
+    "exemples": ["Mihinana vary", "Mihinana sakafo"],
+    "Lemmatisation": "hinana",
+    "synonymes": ["misakafo"],
+    "sentiment": "neutre"
+  },
+  "misotro": {
+    "definitions": ["boire", "consommer un liquide"],
+    "type": "verbe",
+    "exemples": ["Misotro rano", "Misotro kafe"],
+    "Lemmatisation": "sotro",
+    "synonymes": ["misotro"],
+    "sentiment": "neutre"
+  },
+  "mahafaly": {
+    "definitions": ["rendre heureux", "réjouir", "plaire"],
+    "type": "verbe",
+    "exemples": ["Mahafaly ahy io", "Zavatra mahafaly"],
+    "Lemmatisation": "faly",
+    "synonymes": ["mampifaly", "mahafinaritra"],
+    "sentiment": "positif"
+  },
+  "sambatra": {
+    "definitions": ["heureux", "content", "joyeux"],
+    "type": "adjectif",
+    "exemples": ["Sambatra aho", "Olona sambatra"],
+    "Lemmatisation": "sambatra",
+    "synonymes": ["faly", "ravoravo"],
+    "sentiment": "positif"
+  },
+  "malahelo": {
+    "definitions": ["triste", "malheureux", "affligé"],
+    "type": "adjectif",
+    "exemples": ["Malahelo aho", "Olona malahelo"],
+    "Lemmatisation": "alahelo",
+    "synonymes": ["kivy", "ory"],
+    "sentiment": "negatif"
+  },
+  "faly": {
+    "definitions": ["joyeux", "content", "heureux"],
+    "type": "adjectif",
+    "exemples": ["Faly aho", "Faly amin'izany"],
+    "Lemmatisation": "faly",
+    "synonymes": ["sambatra", "ravoravo"],
+    "sentiment": "positif"
+  },
+  "razana": {
+    "definitions": ["ancêtre", "aïeul", "défunt vénéré"],
+    "type": "nom",
+    "exemples": ["Razanay ireo", "Manaja ny razana"],
+    "Lemmatisation": "razana",
+    "synonymes": ["razambe"],
+    "sentiment": "neutre"
+  },
+  "famadihana": {
+    "definitions": ["retournement des morts", "cérémonie funéraire traditionnelle"],
+    "type": "nom",
+    "exemples": ["Hanao famadihana izahay", "Fomban-drazana ny famadihana"],
+    "Lemmatisation": "fady",
+    "synonymes": ["famadihana"],
+    "sentiment": "neutre"
+  },
+  "ray": {
+    "definitions": ["père", "papa"],
+    "type": "nom",
+    "exemples": ["Ray aman-dreny", "Ray mahery"],
+    "Lemmatisation": "ray",
+    "synonymes": ["dada", "baba"],
+    "sentiment": "positif"
+  },
+  "reny": {
+    "definitions": ["mère", "maman"],
+    "type": "nom",
+    "exemples": ["Reny malala", "Ray aman-dreny"],
+    "Lemmatisation": "reny",
+    "synonymes": ["neny", "mama"],
+    "sentiment": "positif"
+  },
+  "zanaka": {
+    "definitions": ["enfant", "fils ou fille"],
+    "type": "nom",
+    "exemples": ["Zanako", "Zanaka tsara"],
+    "Lemmatisation": "zanaka",
+    "synonymes": ["zaza"],
+    "sentiment": "positif"
+  },
+  "romazava": {
+    "definitions": ["bouillon de viande avec brèdes", "soupe claire malgache"],
+    "type": "nom",
+    "exemples": ["Mahandro romazava", "Romazava mafana"],
+    "Lemmatisation": "mazava",
+    "synonymes": ["lasopy"],
+    "sentiment": "positif"
+  },
+  "hena": {
+    "definitions": ["viande", "chair"],
+    "type": "nom",
+    "exemples": ["Hena akoho", "Hena omby"],
+    "Lemmatisation": "hena",
+    "synonymes": ["nofon-kazo"],
+    "sentiment": "neutre"
+  },
+  "sakana": {
+    "definitions": ["poisson"],
+    "type": "nom",
+    "exemples": ["Sakana masaka", "Mihinana sakana"],
+    "Lemmatisation": "sakana",
+    "synonymes": ["trondro"],
+    "sentiment": "neutre"
+  },
+  "manosika": {
+    "definitions": ["pousser", "faire avancer"],
+    "type": "verbe",
+    "exemples": ["Manosika ny varavarana", "Manosika fiara"],
+    "Lemmatisation": "tosika",
+    "synonymes": ["manosoka"],
+    "sentiment": "neutre"
+  },
+  "misintona": {
+    "definitions": ["tirer", "attirer vers soi"],
+    "type": "verbe",
+    "exemples": ["Misintona ny tady", "Misintona ny varavarana"],
+    "Lemmatisation": "sintona",
+    "synonymes": ["manintona"],
+    "sentiment": "neutre"
+  },
+  "hendry": {
+    "definitions": ["sage", "intelligent", "avisé"],
+    "type": "adjectif",
+    "exemples": ["Olona hendry", "Teny hendry"],
+    "Lemmatisation": "hendry",
+    "synonymes": ["manan-tsaina", "mahay"],
+    "sentiment": "positif"
+  },
+  "adala": {
+    "definitions": ["bête", "stupide", "idiot"],
+    "type": "adjectif",
+    "exemples": ["Zavatra adala", "Aza adala"],
+    "Lemmatisation": "adala",
+    "synonymes": ["tsy manan-tsaina"],
+    "sentiment": "negatif"
+  },
+  "Alahady": {
+    "definitions": ["jour"],
+    "type": "nom",
+    "exemples": ["Androany Alahady", "Alahady mampiasa"],
+    "Lemmatisation": "alahady",
+    "synonymes": [],
+    "sentiment": "neutre"
+  },
+  "Antananarivo": {
+    "definitions": ["capitale de Madagascar", "ville des mille"],
+    "type": "nom propre",
+    "exemples": ["Monina any Antananarivo aho", "Tanàna lehiben'i Madagasikara"],
+    "Lemmatisation": "Antananarivo",
+    "synonymes": ["Tana", "Tananarive"],
+    "sentiment": "neutre"
+  },
+  "Antsirabe": {
+    "definitions": ["ville des hauts plateaux", "ville thermale"],
+    "type": "nom propre",
+    "exemples": ["Mandeha any Antsirabe", "Tanàna mangatsiaka"],
+    "Lemmatisation": "Antsirabe",
+    "synonymes": ["Antsirabe"],
+    "sentiment": "neutre"
+  },
+  "Toamasina": {
+    "definitions": ["ville portuaire de la côte est", "premier port de Madagascar"],
+    "type": "nom propre",
+    "exemples": ["Sambo avy any Toamasina", "Tanàna amoron-dranomasina"],
+    "Lemmatisation": "Toamasina",
+    "synonymes": ["Tamatave"],
+    "sentiment": "neutre"
+  },
+  "mahafinaritra": {
+    "definitions": ["agréable", "plaisant", "délicieux"],
+    "type": "adjectif",
+    "exemples": ["Mahafinaritra ny toetr'andro", "Sakafo mahafinaritra"],
+    "Lemmatisation": "finaritra",
+    "synonymes": ["mahafaly", "tsara"],
+    "sentiment": "positif"
+  },
+  "mampalahelo": {
+    "definitions": ["attristant", "malheureux", "triste"],
+    "type": "adjectif",
+    "exemples": ["Mampalahelo ny zavatra nitranga", "Toe-javatra mampalahelo"],
+    "Lemmatisation": "alahelo",
+    "synonymes": ["malahelo", "mampalatsaka"],
+    "sentiment": "negatif"
+  },
+  "mahatezitra": {
+    "definitions": ["énervant", "irritant", "qui met en colère"],
+    "type": "adjectif",
+    "exemples": ["Mahatezitra ny toe-javatra", "Teny mahatezitra"],
+    "Lemmatisation": "tezitra",
+    "synonymes": ["mampahatezitra", "mampahory"],
+    "sentiment": "negatif"
+  },
+  "mendrika": {
+    "definitions": ["digne", "méritant", "de qualité"],
+    "type": "adjectif",
+    "exemples": ["Mendrika ny voninahitra", "Olona mendrika"],
+    "Lemmatisation": "mendrika",
+    "synonymes": ["tsara", "soa"],
+    "sentiment": "positif"
+  },
+  "soa": {
+    "definitions": ["bon", "bien", "bienfait"],
+    "type": "adjectif",
+    "exemples": ["Olona soa", "Zavatra soa"],
+    "Lemmatisation": "soa",
+    "synonymes": ["tsara", "mendrika"],
+    "sentiment": "positif"
+  }
+}

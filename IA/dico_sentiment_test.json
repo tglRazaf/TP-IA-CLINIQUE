@@ -1,0 +1,87 @@
+{
+  "tsara": {
+    "definitions": [
+      "bon",
+      "bien"
+    ],
+    "type": "adjectif",
+    "exemples": [
+      "Tsara loatra"
+    ],
+    "Lemmatisation": "tsara",
+    "synonymes": [
+      "soa"
+    ],
+    "sentiment": "positif"
+  },
+  "mahafaly": {
+    "definitions": [
+      "rendre heureux"
+    ],
+    "type": "verbe",
+    "exemples": [
+      "Mahafaly ahy io"
+    ],
+    "Lemmatisation": "faly",
+    "synonymes": [
+      "mampifaly"
+    ],
+    "sentiment": "positif"
+  },
+  "ratsy": {
+    "definitions": [
+      "mauvais"
+    ],
+    "type": "adjectif",
+    "exemples": [
+      "Ratsy fanahy"
+    ],
+    "Lemmatisation": "ratsy",
+    "synonymes": [
+      "tsy tsara"
+    ],
+    "sentiment": "negatif"
+  },
+  "malahelo": {
+    "definitions": [
+      "triste"
+    ],
+    "type": "adjectif",
+    "exemples": [
+      "Malahelo aho"
+    ],
+    "Lemmatisation": "alahelo",
+    "synonymes": [
+      "kivy"
+    ],
+    "sentiment": "negatif"
+  },
+  "vary": {
+    "definitions": [
+      "riz"
+    ],
+    "type": "nom",
+    "exemples": [
+      "Mihinana vary"
+    ],
+    "Lemmatisation": "vary",
+    "synonymes": [
+      "vary"
+    ],
+    "sentiment": "neutre"
+  },
+  "trano": {
+    "definitions": [
+      "maison"
+    ],
+    "type": "nom",
+    "exemples": [
+      "Trano lehibe"
+    ],
+    "Lemmatisation": "trano",
+    "synonymes": [
+      "toerana"
+    ],
+    "sentiment": "neutre"
+  }
+}

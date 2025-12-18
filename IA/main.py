@@ -1,0 +1,4 @@
+import CorrecteurMalagasy from corrector
+import AnalyseurSentiment from sentiment_analyzer
+import AnalyseurOrthographique from orthography_analyzer
+

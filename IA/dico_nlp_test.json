@@ -1,0 +1,72 @@
+{
+  "vary": {
+    "definitions": [
+      "riz"
+    ],
+    "type": "nom",
+    "exemples": [
+      "Mihinana vary"
+    ],
+    "Lemmatisation": "vary",
+    "synonymes": [
+      "vary"
+    ],
+    "sentiment": "neutre"
+  },
+  "mandeha": {
+    "definitions": [
+      "aller"
+    ],
+    "type": "verbe",
+    "exemples": [
+      "Mandeha any Tana"
+    ],
+    "synonymes": [
+      "mizotra"
+    ],
+    "sentiment": "neutre"
+  },
+  "tsara": {
+    "definitions": [
+      "bon"
+    ],
+    "type": "adjectif",
+    "exemples": [
+      "Tsara loatra"
+    ],
+    "Lemmatisation": "tsara",
+    "synonymes": [
+      "soa",
+      "mendrika"
+    ],
+    "sentiment": "positif"
+  },
+  "mahafaly": {
+    "definitions": [
+      "rendre heureux"
+    ],
+    "type": "verbe",
+    "exemples": [
+      "Mahafaly ahy"
+    ],
+    "Lemmatisation": "faly",
+    "synonymes": [
+      "mampifaly"
+    ],
+    "sentiment": "positif"
+  },
+  "Antananarivo": {
+    "definitions": [
+      "capitale de Madagascar"
+    ],
+    "type": "nom propre",
+    "exemples": [
+      "Monina any Antananarivo"
+    ],
+    "Lemmatisation": "Antananarivo",
+    "synonymes": [
+      "Tana"
+    ],
+    "sentiment": "neutre"
+  }
+}
