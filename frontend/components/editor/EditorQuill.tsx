@@ -14,7 +14,7 @@ export default function EditorQuill() {
   const [correctedWords, setCorrectedWords] = useState([] as string[])
     const [show, setShow] = useState(false);
   const [pos, setPos] = useState({ x: 0, y: 0 });
-  const [selectedWord, setSelectedWord] = useState({});
+  const [selectedWord, setSelectedWord] = useState({word: "", position: {x: 0, y: 0}});
 
   const modules = {
     toolbar: [
@@ -77,17 +77,31 @@ export default function EditorQuill() {
     // alert(correctedWords.join(', '))
     setShow(true)
     setPos({ x: event.clientX, y: event.clientY })
-    
   }
 
   const handleSelectionChange = (range: any) => {
     const pleinText = htmlToPlainText(value)
-    setSelectedWord({
-      word: pleinText.split('').slice(range.index, range.index + range.length).join(''),
-      position: { x: range.index, y: range.index + range.length }
-    })
-    fetchCorrectWords(pleinText.split('').slice(range.index, range.index + range.length).join(''))
+    try {
+      setSelectedWord({
+        word: pleinText.split('').slice(range.index, range.index + range.length).join(''),
+        position: { x: range.index, y: range.index + range.length }
+      })
+      fetchCorrectWords(pleinText.split('').slice(range.index, range.index + range.length).join(''))
+    } catch (error) {
+      console.log("No word selected");
+    }
   };
+
+  const handleCorrection = (word: string) => {
+    const plainText = htmlToPlainText(value)
+    const correctedText =
+    plainText.slice(0, selectedWord.position.x) +
+    word +
+    plainText.slice(selectedWord.position.y);
+
+  setValue(correctedText);
+    setShow(false)
+  }
 
   return (
     <div className="text-black rounded-2xl shadow-xl" onContextMenu={onRightClick}>
@@ -102,9 +116,9 @@ export default function EditorQuill() {
         className="min-h-[250px] bg-white border-none"
         onKeyUp={onKeyUp}
       />
-      <div className="suggested-words text-white">
+      <div className="suggested-words text-white mt-2">
         <p className="w-screen">{suggestions.map((suggestion, index) => (
-          <span className="cursor-pointer py-1 my-1 hover:bg-gray-200" key={index} onClick={()=> handleSuggestionClick(suggestion)}>{suggestion}<br/></span>
+          <span className="cursor-pointer py-1 my-2 hover:bg-gray-400" key={index} onClick={()=> handleSuggestionClick(suggestion)}>{suggestion}<br/></span>
         ))}</p>
       </div>
       {show && (
@@ -112,7 +126,7 @@ export default function EditorQuill() {
           items={correctedWords}
           position={pos}
           onSelect={(item) => {
-            setValue(item);
+            handleCorrection(item);
             setShow(false);
           }}
         />
