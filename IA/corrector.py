@@ -1,6 +1,5 @@
 """
 Correcteur Orthographique Malagasy
-Adapté au nouveau format du dictionnaire
 """
 
 import json

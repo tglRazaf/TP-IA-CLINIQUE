@@ -1,6 +1,5 @@
 """
 Pipeline NLP Complet pour le Malagasy
-Utilise les données du dictionnaire (pas de ML complexe)
 """
 
 import json
@@ -329,102 +328,5 @@ class NLPMalagasy:
         return dict(compteur)
 
 
-# ===== EXEMPLE D'UTILISATION =====
-
-# Créer un dictionnaire de test
-dico_test = {
-    "vary": {
-        "definitions": ["riz"],
-        "type": "nom",
-        "exemples": ["Mihinana vary"],
-        "Lemmatisation": "vary",
-        "synonymes": ["vary"],
-        "sentiment": "neutre"
-    },
-    "mandeha": {
-        "definitions": ["aller"],
-        "type": "verbe",
-        "exemples": ["Mandeha any Tana"],
-        "synonymes": ["mizotra"],
-        "sentiment": "neutre"
-    },
-    "tsara": {
-        "definitions": ["bon"],
-        "type": "adjectif",
-        "exemples": ["Tsara loatra"],
-        "Lemmatisation": "tsara",
-        "synonymes": ["soa", "mendrika"],
-        "sentiment": "positif"
-    },
-    "mahafaly": {
-        "definitions": ["rendre heureux"],
-        "type": "verbe",
-        "exemples": ["Mahafaly ahy"],
-        "Lemmatisation": "faly",
-        "synonymes": ["mampifaly"],
-        "sentiment": "positif"
-    },
-    "Antananarivo": {
-        "definitions": ["capitale de Madagascar"],
-        "type": "nom propre",
-        "exemples": ["Monina any Antananarivo"],
-        "Lemmatisation": "Antananarivo",
-        "synonymes": ["Tana"],
-        "sentiment": "neutre"
-    }
-}
-
-# Sauvegarder
-with open('dico_nlp_test.json', 'w', encoding='utf-8') as f:
-    json.dump(dico_test, f, ensure_ascii=False, indent=2)
-
 # Initialiser le pipeline
 nlp = NLPMalagasy('dico_nlp_test.json', 'cleaned_bible.txt')
-
-print("\n" + "="*60)
-print("DÉMONSTRATION PIPELINE NLP MALAGASY")
-print("="*60)
-
-texte_test = "Mandeha any Antananarivo aho mihinana vary tsara mahafaly"
-
-print(f"\n📝 Texte à analyser : '{texte_test}'")
-
-print("\n--- 1. TOKENIZATION ---")
-tokens = nlp.tokenize(texte_test)
-print(f"Tokens : {tokens}")
-
-print("\n--- 2. LEMMATISATION ---")
-for mot in tokens:
-    lemme = nlp.lemmatiser(mot)
-    print(f"  {mot} → {lemme}")
-
-print("\n--- 3. POS TAGGING ---")
-pos_tags = nlp.pos_tag(tokens)
-for mot, tag in pos_tags:
-    print(f"  {mot} : {tag}")
-
-print("\n--- 4. NER (Entités Nommées) ---")
-entites = nlp.extraire_entites(texte_test)
-for type_entite, liste_entites in entites.items():
-    if liste_entites:
-        print(f"  {type_entite} : {liste_entites}")
-
-print("\n--- 5. ANALYSE DE SENTIMENT ---")
-sentiment = nlp.analyser_sentiment(texte_test)
-print(f"  Sentiment dominant : {sentiment['sentiment_dominant']}")
-print(f"  Scores : {sentiment['scores']}")
-print(f"  Mots positifs : {sentiment['mots']['positif']}")
-
-print("\n--- 6. PREDICTION ---")
-mot_test = "bibilmandeava"
-synonymes = nlp.predire_mot_suivant(mot_test)
-print(f"  Synonymes de '{mot_test}' : {synonymes}")
-
-print("\n--- 7. ANALYSE COMPLÈTE ---")
-analyse_complete = nlp.analyser_texte_complet(texte_test)
-print(f"  Nombre de mots : {analyse_complete['statistiques']['nombre_mots']}")
-print(f"  Mots uniques : {analyse_complete['statistiques']['mots_uniques']}")
-print(f"  Distribution POS : {analyse_complete['statistiques']['distribution_pos']}")
-
-print("\n✅ Pipeline NLP complet opérationnel !")
-print("🎯 8 modules NLP sans Machine Learning complexe !")
